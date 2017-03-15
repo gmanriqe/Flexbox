@@ -3,107 +3,119 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portafolio | Home</title>
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<!-- css -->	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
 	<main class="wrapper">
-		<nav class="flex navbar">
-			<a href="#">About</a>
-			<a href="#">Creation</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
-			<a href="#">GManriqe Portfolio</a>
-		</nav>
+		<header class="flex navbar">
+			<nav class="flex flex__item">
+				<a href="#about">About</a>
+				<a href="#creation">Creation</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#contact">Contact</a>			
+			</nav>
+			<h1 class="flex__item">Gmanriqe<span>PORTFOLIO</span></h1>
+		</header>
 		
-		<main class="content">
-			<article class="flex about">
-				<section class="photo">
+		<main class="content" >
+			<article class="flex about" id="about">
+				<section class="photo flex__item">
 					<figure>
-						<img src="" alt=""/>
+						<img src="img/cat.png" alt="Foto Gmanriqe" />
 						<figcaption></figcaption>
 					</figure>
 				</section>
 
-				<section class="dark description">
-					<p><span class="numer">01.</span>about me</p>
-					<p></p>
+				<section class="description flex__item">
+					<p class="subtitle"><span class="numer">01.</span>about me</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 				</section>
 
-				<section class="title">
+				<section class="title flex__item">
 					<h2>about</h2>
 				</section>
 			</article>	
+		
+
+			<article class="flex creation" id="creation">
+				<section class="title flex__item">
+					<h2>creation</h2>
+				</section>
+				<section class="image flex__item">
+					<figure>
+						<img src="img/creation-cat.png" alt="Foto Creation"/>
+						<figcaption></figcaption>
+					</figure>				
+				</section>
+				<section class="description flex__item">
+					<p class="subtitle"> <span class="number">02.</span>creation</p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostr.</p>
+				</section>
+			</article> <!-- fin article creation -->
+
+			<article class="flex portfolio" id="portfolio">
+				<section class="description flex__item">
+					<p class="subtitle"><span class="number">03.</span>portfolio</p>
+					<ul>
+						<li>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore.</p>
+							<a href="#">www.miweb.com</a>
+						</li>
+						<li>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore.</p>
+							<a href="#">www.miweb.com</a>
+						</li>
+						<li>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore.</p>
+							<a href="#">www.miweb.com</a>
+						</li>
+					</ul>
+				</section>
+				<section class="title flex__item">
+					<h2>portfolio</h2>
+				</section>
+			</article> <!-- fin article portfolio-->
+
+			<article class="flex contact" id="contact">
+				<section class="description flex__item">
+					<p class="subtitle"><span class="numer">04.</span>contact</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostr.</p>
+				</section>
+				<section class="title flex__item">
+					<h2>contact</h2>
+				</section>
+				<section class="form flex__item">
+					<form action="" method="POST" id="formPortfolio">
+						<div class="form__container">
+							<input type="email" name="email" placeholder="Ingrese su email" autofocus="" id="email"/>
+							<textarea rows="4" cols="3" name="asunto" placeholder="Asunto" id="asunto"></textarea>
+						</div>
+						<button type="button" class="btn" id="btnPortfolio">Enviar</button>
+					</form>
+				</section>
+			</article> <!-- fin article contact-->
 		</main> <!-- fin main -->
-
-		<article class="flex creation">
-			<section class="dark title">
-				<h2>creation</h2>
-			</section>
-			<section class="image">
-				<figure>
-					<img src="" alt=""/>
-					<figcaption></figcaption>
-				</figure>				
-			</section>
-			<section class="description">
-				<p> <span class="number">02.</span>creation</p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostr.</p>
-			</section>
-		</article> <!-- fin article creation -->
-
-		<article class="flex portfolio">
-			<section class="description">
-				<p><span class="number">03.</span>portfolio</p>
-				<ul>
-					<li>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore.</p>
-						<a href="#">www.miweb.com</a>
-					</li>
-					<li>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore.</p>
-						<a href="#">www.miweb.com</a>
-					</li>
-					<li>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore.</p>
-						<a href="#">www.miweb.com</a>
-					</li>
-				</ul>
-			</section>
-			<section class="dark title">
-				<h2>portfolio</h2>
-			</section>
-		</article> <!-- fin article portfolio-->
-
-		<article class="flex contact">
-			<section class="description">
-				<p><span class="numer">04.</span>contact</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostr.</p>
-			</section>
-			<section class="dark title">
-				<h2>contact</h2>
-			</section>
-			<section class="form">
-				<form action="" method="">
-					<fieldset>
-						<label for="">email</label>
-						<input type="email" name="email" placeholder="Ingrese su email"/>
-					</fieldset>
-					<button type="submit" class="btn">enviar</button>
-				</form>
-			</section>
-		</article> <!-- fin article contact-->
+		<footer>
+			<div class="footer">
+				<p>© 2017 Todos los derechos reservados. PORTFOLIO – Powered by <a href="#">GManriqe</a></p>
+			</div>
+		</footer>
 	</main>
 
 	<script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script type="text/javascript" src="js/validationPortfolio.js"></script>
 </body>
 </html>
